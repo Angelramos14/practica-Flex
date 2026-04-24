@@ -16,6 +16,7 @@ nav {
 nav img {
     width: 150px;
     /*Cambiamos el ancho de la imagen dentro del nav*/
+    border-radius: 10px;
 }
 
 nav a {
@@ -32,4 +33,30 @@ nav a:hover{
     background-color: black; /*Color de fondo al pasar el mouse*/
     scale: 1.1; /*Aumentar el tamaño del enlae al pasar el mouse*/
     transition: 0.6s; /*Tiempo de duracion de la animacaión*/
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly; /*Alineacion horizontal*/
+    gap: 30px; /*Separacion entre los elementos*/
+    margin-top: 25px; /*Para separar las tarjetas del menu*/
+    flex-wrap: wrap; /*Usar varias lineas*/
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alineacion horizontal*/
+    gap: 20px; /*Separacion del texto y la imagen*/
+}
+
+.card img{
+    width: 300px;/*ancho*/
+    height: 300px;/*alto*/
+    object-fit: cover; /*Para que la imagen no se aplaste*/
+    border-radius: 20px; /*Bordes redondeados*/
+}
+.card h3{
+    font-size: 23px;
+    font-weight: 400;
 }
